@@ -1,0 +1,24 @@
+<div class=" block mx-auto my-12 p-8 bg-blue w-1/2 border border-gray-200 rounded-lg
+shadow-lg text-gray-800 ">
+	<h1 class="text-2xl font-bold mb-8 text-center">Login</h1>
+
+ <form action="" method="POST" class="mt-4">
+
+	
+		<label for="email">
+			<!-- font awesome icon -->
+			<i class="fas fa-user"></i>
+		</label>
+		<input type="email" name="email" placeholder="mail" id="email" required>
+		<label for="password">
+			<i class="fas fa-lock"></i>
+		</label>
+		<input type="password" name="password" placeholder="Password" id="password" required>
+		<input type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg w-full mt-4" value="Login">
+	
+	
+    {{#if error}}
+       <p class=" text-red-500 font-bold text-lg my-8">*{{error}}</p>
+    {{/if}}
+	</form>
+</div>
