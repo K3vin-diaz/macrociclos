@@ -21,18 +21,14 @@
       </div>
 
       <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
-        {{#if name}}
+        {{#if name }}
         <p>{{name}}</p>
 
         <li class="nav-item px-4">
           <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Logout</a>
         </li>
 
-        
-        <li class="nav-item px-4">
-          <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Macrociclos</a>
-        </li>
-
+      
         {{else}}
         <li class="nav-item px-4">
           <a href="/login" class="nav-link font-semibold border-2 border-white hover:bg-white hover:text-green-700 py-3

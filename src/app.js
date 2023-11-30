@@ -6,6 +6,8 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 const loginRoutes = require('./routes/login');
 const { redirect } = require('express/lib/response');
+const macrociclosRoutes = require('./routes/macrociclos')
+
 
 const app = express();
 app.set('port', 5000);
@@ -49,4 +51,9 @@ app.get('/', (req, res) => {
 	} else {
 		res.redirect('/login');
 	}
+
+	app.use('/macrociclos', macrociclosRoutes);
+
+	
+
 });
