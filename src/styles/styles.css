@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #edf2f7; /* Reemplaza con el color que desees */
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    padding: 1.25rem 3rem; /* Ajusta según sea necesario */
+    background-color: #38a169; /* Reemplaza con el color que desees */
+    color: #ffffff; /* Reemplaza con el color que desees */
+  }
+
+  .nav-brand {
+    width: 50%;
+    padding-right: 1.5rem; /* Ajusta según sea necesario */
+  }
+
+  .nav-brand h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-links p {
+    margin-right: 1rem; /* Ajusta según sea necesario */
+  }
+
+  .nav-link {
+    font-weight: bold;
+    padding: 0.75rem 1rem; /* Ajusta según sea necesario */
+    margin-right: 1rem; /* Ajusta según sea necesario */
+    text-decoration: none;
+    border-radius: 0.25rem; /* Ajusta según sea necesario */
+  }
+
+  .nav-link-logout {
+    background-color: #e53e3e; /* Reemplaza con el color que desees */
+    color: #ffffff; /* Reemplaza con el color que desees */
+  }
+
+  .nav-link-login,
+  .nav-link-register {
+    border: 2px solid #ffffff; /* Reemplaza con el color que desees */
+    color: #ffffff; /* Reemplaza con el color que desees */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .nav-link-login:hover,
+  .nav-link-register:hover {
+    background-color: #ffffff; /* Reemplaza con el color que desees */
+    color: #38a169; /* Reemplaza con el color que desees */
+  }
+
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto; /* Ajusta según sea necesario */
+    max-width: 600px; /* Ajusta según sea necesario */
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }

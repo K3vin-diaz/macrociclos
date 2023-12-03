@@ -1,1 +1,135 @@
-<h1 class="m-16 text-2xl font-bold text-gray-900">Crear nuevo macrociclo</h1>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #edf2f7; /* Reemplaza con el color que desees */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      padding: 1.25rem 3rem; /* Ajusta según sea necesario */
+      background-color: #38a169; /* Reemplaza con el color que desees */
+      color: #ffffff; /* Reemplaza con el color que desees */
+    }
+
+    .nav-brand {
+      width: 50%;
+      padding-right: 1.5rem; /* Ajusta según sea necesario */
+    }
+
+    .nav-brand h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .nav-links p {
+      margin-right: 1rem; /* Ajusta según sea necesario */
+    }
+
+    .nav-link {
+      font-weight: bold;
+      padding: 0.75rem 1rem; /* Ajusta según sea necesario */
+      margin-right: 1rem; /* Ajusta según sea necesario */
+      text-decoration: none;
+      border-radius: 0.25rem; /* Ajusta según sea necesario */
+    }
+
+    .nav-link-logout {
+      background-color: #e53e3e; /* Reemplaza con el color que desees */
+      color: #ffffff; /* Reemplaza con el color que desees */
+    }
+
+    .nav-link-login,
+    .nav-link-register {
+      border: 2px solid #ffffff; /* Reemplaza con el color que desees */
+      color: #ffffff; /* Reemplaza con el color que desees */
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link-login:hover,
+    .nav-link-register:hover {
+      background-color: #ffffff; /* Reemplaza con el color que desees */
+      color: #38a169; /* Reemplaza con el color que desees */
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 2rem auto; /* Ajusta según sea necesario */
+      max-width: 600px; /* Ajusta según sea necesario */
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+    
+
+  <form action="/macrociclos/create" method="post" class="mx-auto">
+    <h1 class="m-16 text-2xl font-bold text-gray-900">Crear nuevo macrociclo</h1>
+
+    <label for="sportName">Nombre del deporte:</label>
+    <input type="text" id="sportName" name="sportName" pattern="[A-Za-z ]" required>
+
+    
+
+    <label for="branchName">Nombre de la rama:</label>
+    <input type="text" id="branchName" name="branchName" pattern="[A-Za-z ]" required>
+
+    <label for="branchHead">Nombre del jefe de rama:</label>
+    <input type="text" id="branchHead" name="branchHead" pattern="[A-Za-z ]"  required>
+
+    <label for="assistantCoach">Nombre del entrenador auxiliar:</label>
+    <input type="text" id="assistantCoach" name="assistantCoach" pattern="[A-Za-z ]"  required>
+
+    <label for="methodologist">Nombre del metodólogo:</label>
+    <input type="text" id="methodologist" name="methodologist" pattern="[A-Za-z ]"  required>
+
+    <label for="planStartDay">Inicio del plan - Día:</label>
+    <input type="number" id="planStartDay" name="planStartDay" min="1" max="31" required>
+
+    <label for="planStartMonth">Inicio del plan - Mes:</label>
+    <input type="number" id="planStartMonth" name="planStartMonth" min="1" max="12" required>
+
+    <label for="planStartYear">Inicio del plan - Año:</label>
+    <input type="number" id="planStartYear" name="planStartYear" min="2023" max="2099" required>
+
+    <input type="submit" value="Crear">
+  </form>
+
+</html>
+

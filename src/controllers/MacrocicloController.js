@@ -1,10 +1,19 @@
+function index(req, res) {
+  if (req.session.loggedin) {
+    let name = req.session.name;
+    res.render('macrociclos/index', { name });
+  } else {
+    res.redirect('/login');
+  }
+}
 
-function index (req, res) {
-    res.send('macrociclos/index')
-    }
-
-function create (req, res) {
-  res.send('macrociclos/create')
+function create(req, res) {
+  if (req.session.loggedin) {
+    let name = req.session.name;
+    res.render('macrociclos/create', { name: req.session.name });
+  } else {
+    res.redirect('/login');
+  }
 }
 
 
