@@ -110,23 +110,23 @@
 
 
 
-<form action="/macrociclos/create" method="post" class="mx-auto">
+<form action="" method="post" class="mx-auto">
   <h1 class="m-16 text-2xl font-bold text-gray-900">Crear nuevo macrociclo</h1>
 
   <label for="sportName">Nombre del deporte:</label>
-  <input type="text" id="sportName" name="sportName" pattern="[a-z ]" required>
+  <input type="text" id="sportName" name="sportName"  required>
 
   <label for="branchName">Nombre de la rama:</label>
-  <input type="text" id="branchName" name="branchName" pattern="[a-z]" required>
+  <input type="text" id="branchName" name="branchName" required>
 
   <label for="branchHead">Nombre del jefe de rama:</label>
-  <input type="text" id="branchHead" name="branchHead" pattern="[A-Za-z ]" required>
+  <input type="text" id="branchHead" name="branchHead" required>
 
   <label for="assistantCoach">Nombre del entrenador auxiliar:</label>
-  <input type="text" id="assistantCoach" name="assistantCoach" pattern="[A-Za-z ]" required>
+  <input type="text" id="assistantCoach" name="assistantCoach" required>
 
   <label for="methodologist">Nombre del metodólogo:</label>
-  <input type="text" id="methodologist" name="methodologist" pattern="[A-Za-z ]" required>
+  <input type="text" id="methodologist" name="methodologist"  required>
 
   <script>
     function calculateWeeks() {
@@ -145,7 +145,7 @@
   <input type="date" id="planEndDate" name="planEndDate" required onchange="calculateWeeks()">
 
   <label for="coreCompetency">Competencia fundamental del plan:</label>
-  <input type="text" id="coreCompetency" name="coreCompetency" pattern="[a-z ]" required>
+  <input type="text" id="coreCompetency" name="coreCompetency" required>
 
   <label for="numCells">Número de acentos:</label>
   <input type="number" id="numCells" name="numCells" min="1" onchange="createCells()">
@@ -210,7 +210,7 @@
 </form>
 
 
-<form action="/macrociclos/create/periodo" method="post" class="mx-auto">
+<form action="" method="post" class="mx-auto">
   <h1 class="m-16 text-2xl font-bold text-gray-900">Crear Periodo</h1>
 
 
@@ -281,7 +281,7 @@
 </form>
 
 
-<form action="/macrociclos/create/periodo" method="post" class="mx-auto">
+<form action="" method="post" class="mx-auto">
   <h1 class="m-16 text-2xl font-bold text-gray-900">Crear Periodos preparativos y competitivos</h1>
 
   <table id="customTable"></table>

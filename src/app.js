@@ -6,7 +6,9 @@ const session = require('express-session');
 const bodyParser = require('body-parser')
 const loginRoutes = require('./routes/login');
 const { redirect } = require('express/lib/response');
-const macrociclosRoutes = require('./routes/macrociclos')
+const macrociclosRoutes = require('./routes/macrociclos');
+const planControllerRoutes = require('./routes/plan');
+const volumenControllerRoutes = require('./routes/volumen');
 
 
 const app = express();
@@ -51,9 +53,9 @@ app.get('/', (req, res) => {
 	} else {
 		res.redirect('/login');
 	}
-
+	//se debe poner para que las use :D
 	app.use('/macrociclos', macrociclosRoutes);
-
-	
+	app.use('/plan', planControllerRoutes);
+	app.use('/volumen', volumenControllerRoutes);
 
 });

@@ -1,22 +1,21 @@
 const express = require("express");
-const MacrocicloController = require("../controllers/MacrocicloController");
+const PlanController = require("../controllers/PlanController");
 // Step 1: Import LoginController
 const LoginController = require("../controllers/LoginController");
 
 const router = express.Router();
-router.get("/macrociclos", MacrocicloController.index);
-router.get("/macrociclos/create", MacrocicloController.create);
+router.get("/plan", PlanController.index);
+router.get("/plan/create", PlanController.create);
 
 // Rutas específicas para mostrar las páginas de índice y creación de macrociclos
 router.get("/index", function (req, res) {
-    //Se debe poner  { name: req.session.name } para validar si está logueado
-  res.render("macrociclos/index", { name: req.session.name });
+  res.render("plan/index", { name: req.session.name });
 });
 
 router.get("/create", function (req, res) {
   //Aqui se debe pasar el nombre del usuario para valdar si está logueado
 
-  res.render("macrociclos/create", { name: req.session.name });
+  res.render("plan/create", { name: req.session.name });
 });
 
 // Step 2: Use router.post('/login', LoginController.auth);

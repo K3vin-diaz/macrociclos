@@ -1,7 +1,7 @@
 function index(req, res) {
   if (req.session.loggedin) {
     let name = req.session.name;
-    res.render('macrociclos/index', { name});
+    res.render('plan/index', { name});
   } else {
     res.redirect('/login');
   }
@@ -10,7 +10,7 @@ function index(req, res) {
 function create(req, res) {
   if (req.session.loggedin) {
     let name = req.session.name;
-    res.render('macrociclos/create', { name});
+    res.render('plan/create', { name });
   } else {
     res.redirect('/login');
   }
