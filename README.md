@@ -1,3 +1,3 @@
-# Login y Registro con Nodejs y Mysql
-Como crear un login y registro de usuarios con Nodejs, Express, y MySQL, donde podemos crear usuarios y autenticarnos para ingresar a la página.
-//Recuerda usar el npm
+# Macrociclos by agiles 2023
+App web, usando mysql, express y node.js para su desarrollo con hbs
+//usa npm install, crear la base datos que se encuentra en db.sql para hacer uso de la base de datos
